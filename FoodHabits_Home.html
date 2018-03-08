@@ -1,7 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.flex-container {
+  display: flex;
+  background-color: grey;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
 body {
   margin: 0;
   min-width: 250px;
@@ -169,19 +178,15 @@ label.star:before {
 <body>
 <center>
 <div style="width:1140px">
-<div style="width:1140px;height:100px;background-color:grey;color:white;">
-<center><b>Food Habits</b></center>
-<table width='200px' align='center'>
-<tr>
-    <td align='center'>
+<div  class="flex-container">
+<div>
 <img src="assets/Cooking1.jpg" alt="Mountain View" width="80" height="80">
-</td>
-    <td>
-<img src="assets/Cooking7.png" alt="Mountain View" width="80" height="80">
-</td>
-</tr>
-</table>
+</div>
+<div style="flex-grow: 8"><span style="color: white"><center><b>Food Habits</b></center></span></div>
 
+<div>
+<img src="assets/Cooking7.png" alt="Mountain View" width="80" height="80">
+</div>
 </div>
 <div style="width:270px;height:640px;background-color:green;color:white;float:left;">
 
